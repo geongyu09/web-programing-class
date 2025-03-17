@@ -1,0 +1,320 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박건규 포트폴리오</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Pretendard", "Noto Sans KR", sans-serif;
+      }
+
+      body {
+        background-color: #f8f9fa;
+        color: #343a40;
+        line-height: 1.6;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* 컨테이너 */
+      .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+
+      header h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        opacity: 0.9;
+        margin-bottom: 1rem;
+      }
+
+      /* 텍스트 스타일 */
+      h2 {
+        position: relative;
+        font-size: 1.8rem;
+        margin: 2rem 0 1rem;
+        color: #3b5998;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #f1f1f1;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 60px;
+        height: 2px;
+        background-color: #4b6cb7;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        margin: 1.5rem 0 0.8rem;
+        color: #2c3e50;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: #555;
+      }
+
+      /* 연락처 섹션 */
+      .contact-section {
+        background-color: #f1f7ff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+        border-left: 4px solid #4b6cb7;
+      }
+
+      .contact-section h3 {
+        margin-top: 0;
+        color: #3b5998;
+      }
+
+      .contact-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .contact-list li {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .contact-list i {
+        margin-right: 0.5rem;
+        color: #4b6cb7;
+      }
+
+      /* 프로젝트 섹션 */
+      .project-section {
+        margin: 2rem 0;
+      }
+
+      .project-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid #4b6cb7;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .project-card h3 {
+        color: #3b5998;
+        margin-top: 0;
+      }
+
+      .project-card ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .project-card li {
+        margin-bottom: 0.5rem;
+        padding-left: 1.2rem;
+        position: relative;
+      }
+
+      .project-card li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #4b6cb7;
+      }
+
+      /* 스킬 섹션 */
+      .skills-section {
+        margin: 2rem 0;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .skill-item {
+        background-color: white;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease;
+      }
+
+      /* 링크 스타일 */
+      a {
+        color: #4b6cb7;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      /* 구분선 */
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #f1f1f1;
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>박건규 포트폴리오</h1>
+        <h2>🫡 성장을 갈망하는 개발자 지망생</h2>
+        <!-- <img src="./geongyu.jpg" alt="박건규" /> -->
+        <p>안녕하십니까! 전남대학교 소프트웨어공학과 20학번 박건규 입니다.</p>
+        <p>웹 프론트엔드 개발자를 꿈꾸고 있습니다.</p>
+      </header>
+
+      <div class="contact-section">
+        <h3>Contact Me!</h3>
+        <ul class="contact-list">
+          <li><i>📧</i> Email : geongyu09@gmail.com</li>
+          <li>
+            <i>💻</i> GitHub :
+            <a href="https://github.com/geongyu09" target="_blank">geongyu09</a>
+          </li>
+          <li>
+            <i>📝</i> Blog :
+            <a href="https://geongyu09.github.io" target="_blank"
+              >건규의 블로그</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- project section -->
+      <section class="project-section">
+        <h2>Project</h2>
+        <div class="project-card">
+          <h3>
+            Cache-Brain | 효율적인 학습을 위한 최적의 암기 서비스를 제공합니다!
+          </h3>
+          <ul>
+            <li>개인 프로젝트</li>
+            <li>기간 : 23.09~23.11</li>
+            <li>
+              성능면에서 렌더링의 구성과, 서비스의 구조를 어떻게 정하게
+              되었는지에 대한 많은 고민과 이에대한 해결법을 도출해 내는 과정을
+              담음.
+            </li>
+            <li>
+              Github :
+              <a
+                href="https://github.com/geongyu09/Cache-Brain"
+                target="_blank"
+              >
+                https://github.com/geongyu09/Cache-Brain
+              </a>
+            </li>
+            <li>
+              Doc :
+              <a
+                href="https://www.notion.so/CacheBrain-a9e263f049c54d6cbd8974f620e8848c?pvs=21"
+                target="_blank"
+                >CacheBrain</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>너와 그린 기린 그림 | *23#</h3>
+          <ul>
+            <li>팀 프로젝트</li>
+            <li>기한 : 23.12.29 ~</li>
+            <li>협력 과정 중 발생한 여러 어려움을 담음.</li>
+            <li>
+              트러블 슈팅 및 성과 발표 :
+              <a
+                href="https://www.youtube.com/live/vVuFdP8J4n4?si=-hLYhO1Qm9-qS0gH&t=13335"
+                target="_blank"
+              >
+                전남대학교 ECONOVATION 2024 Winter DEV
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/JNU-econovation/econo-recruit-fe"
+                target="_blank"
+              >
+                Github
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>EEOS</h3>
+          <ul>
+            <li>팀 프로젝트</li>
+            <li>기한 24.03 ~</li>
+            <li>
+              실제 사용자를 유치한 경험 속에서 변경되는 요구사항을 어떻게
+              유연하게 대응할 수 있는지 코드를 적용함
+            </li>
+            <li>
+              유저의 피드백을 받으면서 어떠한 기능적 비기능적 요구사항을 받아
+              적용해보는 경험
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/live/L0XSyKOznSY?si=qn3TG34NqfAoGZw5&t=5626"
+                target="_blank"
+              >
+                전남대학교 ECONOVATION 2024 Summer DEV
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/JNU-econovation/EEOS-FE"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skill section -->
+      <section class="skills-section">
+        <h2>Skill</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">Next.js</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
