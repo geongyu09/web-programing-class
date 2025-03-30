@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문조사</title>
+  </head>
+  <body>
+    <header>
+      <h1>설문지</h1>
+      <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+      <hr />
+    </header>
+    <form action="">
+      <span for="grade">학년</span>
+      <input type="radio" id="first-grades" name="grade" value="1" />
+      <label for="first-grades"> 1학년 </label>
+      <input type="radio" id="second-grades" name="grade" value="2" />
+      <label for="second-grades"> 2학년 </label>
+      <input type="radio" id="third-grades" name="grade" value="3" />
+      <label for="third-grades"> 3학년 </label>
+      <input type="radio" id="fourth-grades" name="grade" value="4" />
+      <label for="fourth-grades"> 4학년 </label>
+
+      <span>성별</span>
+      <input type="radio" id="man" name="sex" />
+      <label for="man">남</label>
+      <input type="radio" id="woman" name="sex" />
+      <label for="woman">여</label>
+
+      <span>관심분야</span>
+      <select name="" id="">
+        <option value="mobile">모바일 소프트웨어</option>
+      </select>
+
+      <span>진로</span>
+      <input type="checkbox" id="developer" name="career" />
+      <label for="developer">개발자</label>
+      <input type="checkbox" id="pm" name="career" />
+      <label for="pm">기획</label>
+      <input type="checkbox" id="sales" name="career" />
+      <label for="sales">영업</label>
+      <input type="checkbox" id="foundation" name="career" />
+      <label for="foundation">창업</label>
+
+      <span>남기고 싶은 말</span>
+      <textarea placeholder="글을 남겨주세요"></textarea>
+    </form>
+
+    <footer>
+      <a href="./"></a>
+      <span>Copyright 2022 by Kitae</span>
+    </footer>
+  </body>
+</html>

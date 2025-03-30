@@ -4,60 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹 페이지의 구성 요소</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        text-align: center;
-        color: green;
-      }
-      h3 {
-        color: #333;
-        margin: 0;
-        padding: 20px 0;
-        background-color: #f8f8f8;
-      }
-      span {
-        display: block;
-        margin: 10px 0;
-        padding: 0 20px;
-        text-align: left;
-      }
-      img {
-        margin: 20px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-    </style>
-    <script>
-      // DOM이 완전히 로드된 후 스크립트 실행
-      document.addEventListener("DOMContentLoaded", function () {
-        const img = document.getElementById("img");
+    <style></style>
 
-        window.show = function () {
-          img.hidden = false;
-        };
-
-        window.hidden = function () {
-          img.hidden = true;
-        };
-      });
-    </script>
+    <script></script>
   </head>
   <body>
-    <h3 onmouseenter="hidden()" onmouseover="hidden()" onmouseleave="show()">
-      Elvis Presley
-    </h3>
-    <hr />
-    <span> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-    <span>
-      Vitae molestiae sit maxime, dignissimos ullam quos quam iusto eum quidem
-      omnis autem possimus, minus suscipit enim laborum commodi optio! Est,
-      laboriosam.
-    </span>
-    <br />
-    <img id="img" src="./image.png" alt="엘비스 프레슬리" width="300" />
+    <table border="1">
+      <caption>
+        이상한테이블
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>성별</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>김철수</td>
+          <td colspan="2">30</td>
+          <!-- <td>남</td> -->
+        </tr>
+        <tr>
+          <td rowspan="4">이영희</td>
+          <td>25</td>
+          <td>여</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>여</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>여</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>합계</td>
+          <td>55</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
