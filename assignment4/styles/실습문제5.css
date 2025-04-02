@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  background-color: aqua;
+}
+h3 {
+  color: green;
+}
+
+#center {
+  font-size: 1.2rem;
+  text-align: center;
+  color: purple;
+  font-weight: 800;
+}
+
+#center strong {
+  background-color: yellow;
+}
+
+p {
+  text-indent: 4rem;
+}
+p em {
+  color: green;
+}
+p strong {
+  color: red;
+}

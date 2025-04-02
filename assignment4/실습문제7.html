@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover활용</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      main {
+        display: flex;
+      }
+      .card {
+        width: 200px;
+        height: 300px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        background-image: url(./assets/card-back.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .card:hover {
+        background-image: url(./assets/card-front.png);
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>:hover활용</h3>
+    <hr />
+    <main>
+      <div>
+        <p>마우스를 올리면 카드의 앞면이 보인다.</p>
+      </div>
+      <div class="card"></div>
+    </main>
+  </body>
+</html>

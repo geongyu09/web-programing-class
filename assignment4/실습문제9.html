@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text-shadow와 box-shadow</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h3 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 3rem;
+        text-align: center;
+        color: yellow;
+      }
+      main {
+        display: flex;
+        gap: 1.2rem;
+      }
+      article {
+        background-color: antiquewhite;
+        padding: 4px;
+        border-radius: 10px;
+      }
+      article:hover {
+        box-shadow: 0 0 10px purple;
+      }
+
+      .website-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Most Vidites Pages</h3>
+    <hr />
+
+    <main>
+      <article class="website">
+        <div class="website-title">
+          <img src="./assets/naver.png" alt="naver icon" />
+          <span>NAVER</span>
+        </div>
+        <div>
+          <img src="./assets/naver-site.png" alt="" width="180" height="120" />
+        </div>
+      </article>
+      <article class="website">
+        <div class="website-title">
+          <img src="./assets/naver.png" alt="naver icon" />
+          <span>google</span>
+        </div>
+        <div>
+          <img src="./assets/google-site.png" alt="" width="180" height="120" />
+        </div>
+      </article>
+      <article class="website">
+        <div class="website-title">
+          <img src="./assets/naver.png" alt="naver icon" />
+          <span>mdn</span>
+        </div>
+        <div>
+          <img src="./assets/mdn-site.png" alt="" width="180" height="120" />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
