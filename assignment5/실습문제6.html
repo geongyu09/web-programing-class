@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spin2 {
+        0% {
+          transform: rotate(-90deg);
+        }
+        50% {
+          transform: rotate(90deg);
+        }
+        100% {
+          transform: rotate(-90deg);
+        }
+      }
+      img {
+        animation: spin 1s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>어지러워요</h3>
+    <hr />
+    <img
+      src="./assets/bob.png"
+      alt="스폰지밥 이미지"
+      width="150"
+      height="150"
+    />
+  </body>
+</html>

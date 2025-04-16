@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션 응용</title>
+    <style>
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      div {
+        position: absolute;
+        animation: scaleup 3s linear;
+      }
+
+      @keyframes scaleup {
+        from {
+          width: 0px;
+          right: 0px;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>애니메이션 응용</h3>
+    <hr />
+    <div>
+      <img
+        src="./assets/bob.png"
+        alt="스폰지밥 이미지"
+        width="150"
+        height="150"
+      />
+      <span>질문 있습니다</span>
+    </div>
+  </body>
+</html>
