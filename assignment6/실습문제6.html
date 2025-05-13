@@ -3,14 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>문자열 배열 다루기</title>
+  <title>17개의 css2 색 이름과 색</title>
 </head>
-<h3>문자열 배열 다루기</h3>
+<h3>17개의 css2 색 이름과 색</h3>
 <hr>
 <script type="text/javascript">
-  const input = prompt("문자열 입력");
-  input.split("&").forEach((str) => {
-    document.write("<p>" + str + "</p>");
+  let colorNames = ["maroon", "red", "orange", "yellow", "olive", "purple", "fuchsia", "white", "Lime", "green", "navy", "blue", "aqua", "teal", "black", "silver", "gray"];
+
+
+  colorNames.forEach((color) => {
+    const Div = document.createElement("div");
+    Div.style.width = "100px";
+    Div.style.paddingBlock = "1rem";
+    Div.style.backgroundColor = color;
+    Div.style.display = "inline-block";
+
+    const P = document.createElement("p");
+    P.innerText = color;
+
+    Div.appendChild(P);
+
+    document.body.appendChild(Div);
   });
 </script>
 </body>
